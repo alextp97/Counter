@@ -18,6 +18,7 @@ const step = document.getElementById('step-input');
 
 const setButton =  document.querySelector('#setButton');
 
+//Declaro las variables que necesitan ser inicializadas
 let count = 0; //Inicializo el contador a 0
 let pausado = false; //El contador al inicio no puede estar pausado, por eso lo inicializo a false
 let uCountUp = true; //Al inicio, el contador se inicializa hacia delante, por lo que lo pongo true directamente
@@ -83,7 +84,8 @@ countUp.addEventListener('click', () => {
     if (uCountUp = false) {
         
         uCountDown = true;
-    } else {
+    } 
+    else {
         uCountUp = true;
         uCountDown = false;
     }
@@ -95,6 +97,7 @@ countDown.addEventListener('click', () => {
     //Si el botón de contar hacia atrás está false, entonces el botón de contar hacia delante se pone true
     if (uCountDown = false) {
         uCountUp = true;
+    
     } else {
         uCountDown = true;
         uCountUp = false;
