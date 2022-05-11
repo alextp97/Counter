@@ -16,8 +16,6 @@ const countDown = document.querySelector('#count-down');
 const setTo = document.getElementById('set-input');
 const step = document.getElementById('step-input');
 
-const setButton =  document.querySelector('#setButton');
-
 //Declaro las variables que necesitan ser inicializadas
 let count = 0; //Inicializo el contador a 0
 let pausado = false; //El contador al inicio no puede estar pausado, por eso lo inicializo a false
@@ -105,12 +103,10 @@ countDown.addEventListener('click', () => {
 });
 
 //Código del evento para el botón de donde quiero que empieze a contar 
-setButton.addEventListener('click', () => {
-    
+setTo.addEventListener('keyup', () => {
     //Convierto la string de la caja de texto a número para que se muestre y sume o reste segundos correctamente
     count = parseInt(setTo.value);
     num.value = count; //Le paso a num el número almacenado y convertido en count
-
 });
 
 }
