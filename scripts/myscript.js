@@ -18,9 +18,9 @@ const step = document.getElementById('step-input');
 
 //Declaro las variables que necesitan ser inicializadas
 let count = 0; //Inicializo el contador a 0
-let pausado = false; //El contador al inicio no puede estar pausado, por eso lo inicializo a false
-let uCountUp = true; //Al inicio, el contador se inicializa hacia delante, por lo que lo pongo true directamente
-let uCountDown = false; //El contador hacia atrás se pone false al inicio, pues no tiene sentido un contador negativo
+let pausado = false; 
+let uCountUp = true; 
+let uCountDown = false; 
 let contador;
 
 //Código del método para cuando pulse el botón de Start
@@ -30,6 +30,7 @@ start.addEventListener('click', () => {
     contador = setInterval(() => {
 
         //Si el botón de contar hacia delante está activo, el contador empieza a sumar los segundos
+        //Teniendo en cuenta el valor del step
         if(uCountUp) {
             count += parseInt(step.value);
         }
