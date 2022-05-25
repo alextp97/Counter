@@ -1,13 +1,7 @@
-
-
-.container {
-    width: 600px;
-    margin-top: 25px;
-    padding: 20px 0px;
-
-    border-radius: 5px;
-    background-color: #303030 ;
+body {
+    font-family: Arial, Helvetica, sans-serif;
 }
+
 
 h1 {
     text-align: center;
@@ -15,48 +9,71 @@ h1 {
     color: white;
 }
 
+h3 {
+    color: white;
+}
+
 hr {
-  color: white;
-  
-  height: 5px;
+    border:1px solid white;
+    width: 300px;
+}
+
+.container {
+    width: 620px;
+    margin: 0px auto;
+    padding: 20px 0px 160px;
+
+    border-radius: 5px;
+    background-color: #0089B8 ;
 }
 
 #counter {
     
-    width: 100%;
-    margin: 40px 0px 0px;
-    padding-left: 180px;
+    width: 42%;
+    margin: 80px 174px 0px;
+    padding: 0px;
     border: none;
     font-size: 50px;
-    background-color: #303030 ;
+    background-color: transparent;
     color: white;
     
 }
 
 .setup, .count, .set, .step {
     margin: 15px;
-    padding-left: 166px;
+    padding-left: 160px;
 
-}
-
-h4 {
-    color: white;
 }
 
 .btn-info {
+
+    padding: 10px 24px;
+
     color:white;
     background-color: #FF8300;
     border-color: #FF6400;
+
+    border-radius: 5px;
+    border-width: 1px;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    box-shadow: 2px 2px 2px #FF6400;
+
 }
 
 .btn-info:hover {
     background-color: #FF6400;
 }
 
-.btn-info:active {
-    background-color: #FF6400;
-}
-
 #set-input, #step-input {
+    width: 260px;
+    padding: 4px;
+
     border-radius: 5px;
+
+    font-size: 18px;
+    border-width: 0px;
+    
 }
